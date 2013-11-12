@@ -1,7 +1,10 @@
 import flask
 from flask import abort, render_template
+import sys
 
+sys.path.insert(0, "/var/www/flask/error_as_a_service")
 app = flask.Flask(__name__)
+from error_as_a_service import app as application
 
 
 @app.route('/')
