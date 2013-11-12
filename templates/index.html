@@ -1,8 +1,14 @@
-<html>
-<head></head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+</head>
 <body>
+<div class="page-header">
 <h1>Error As A Service</h1>
+</div>
 <h2>Valid Errors</h2>
+<p>
 <ul>
     <li><a href="/400">400</a></li>
     <li><a href="/401">401</a></li>
@@ -30,6 +36,7 @@
     <li><a href="/502">502</a></li>
     <li><a href="/503">503</a></li>
 </ul>
+</p>
 <a href="https://github.com/jeremiah1066/error_as_a_service">GitHub</a>
 </body>
 </html>
